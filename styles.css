@@ -1,0 +1,71 @@
+:root {
+  --color1: #e4d4c8;
+  --color2: #d0b49f;
+  --color3: #a47551;
+  --color4: #523a28;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0.3rem; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color1); /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color4); /* Color of the scrollbar thumb */
+  border-radius: 3rem; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color1); /* Color when hovered */
+}
+
+body {
+  background-color: var(--color4);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--color1);
+}
+
+h1,
+h2,
+label {
+  font-weight: 600;
+}
+
+.input {
+  box-shadow: 1px 1px 4px 2px var(--color2);
+  color: var(--color4);
+}
+
+.input:focus {
+  border-color: var(--color1);
+  box-shadow: 1px 1px 4px 2px var(--color1);
+  color: var(--color4);
+}
+
+.custom {
+  color: var(--color4);
+  box-shadow: 1px 1px 4px 2px var(--color2);
+}
+
+.custom:hover {
+  background-color: var(--color1);
+  color: var(--color4);
+}
+
+.hidden {
+  display: none;
+}
+
+#results-div {
+  box-shadow: 1px 1px 4px 2px var(--color2);
+  color: var(--color4);
+  max-height: 35vh;
+  overflow: auto;
+  background-color: var(--color1);
+}
